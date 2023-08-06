@@ -12,17 +12,17 @@ import os
 import sys
 
 sys.path.insert(0,  os.path.abspath('../..'))
-sys.path.insert(0,  os.path.abspath('../../src'))
-src_dir = [f.path for f in os.scandir(os.path.abspath('../../src/')) if f.is_dir()]
+sys.path.insert(0,  os.path.abspath('../../nrto/'))
+src_dir = [f.path for f in os.scandir(os.path.abspath('../../nrto/')) if f.is_dir()]
 for path in src_dir:
 	sys.path.insert(0,  path)
 
 
 # -- Project information ------------------------------------------------------
 # Source: https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
-project = 'bessapypitemplate'
-author = 'Your Name'
-copyright = '2023, Your Name'
+project = 'NRTO_JAX'
+author = 'Igor, Surya'
+copyright = '2023, Surya'
 version = '0.0.1'
 release = '0.0.1'
 
